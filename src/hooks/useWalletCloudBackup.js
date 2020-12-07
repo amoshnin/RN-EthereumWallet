@@ -19,7 +19,7 @@ import {
 import { delay } from '@rainbow-me/helpers/utilities';
 import WalletBackupTypes from '@rainbow-me/helpers/walletBackupTypes';
 import walletLoadingStates from '@rainbow-me/helpers/walletLoadingStates';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 function getUserError(e) {
   switch (e.message) {

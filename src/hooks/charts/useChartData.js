@@ -7,6 +7,7 @@ import { useCallbackOne } from 'use-memo-one';
 import {
   chartsUpdateChartType,
   DEFAULT_CHART_TYPE,
+  chartsLoadState,
 } from '~/redux/reducers/charts';
 import { emitChartsRequest } from '~/redux/reducers/explorer';
 import { daysFromTheFirstTx } from '../../utils/ethereumUtils';

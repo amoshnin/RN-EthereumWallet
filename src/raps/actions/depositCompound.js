@@ -16,7 +16,7 @@ import {
   savingsAssetsListByUnderlying,
 } from '../../references';
 import { gasUtils } from '../../utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const NOOP = () => undefined;
 

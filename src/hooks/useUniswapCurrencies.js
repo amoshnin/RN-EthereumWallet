@@ -20,7 +20,7 @@ import useUniswapAssetsInWallet from './useUniswapAssetsInWallet';
 import useUniswapCalls from './useUniswapCalls';
 import Routes from '@rainbow-me/routes';
 import { ethereumUtils, isNewValueForPath } from '@rainbow-me/utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const isSameAsset = (newInputCurrency, previousInputCurrency) =>
   !isNewValueForPath(newInputCurrency, previousInputCurrency, 'address');

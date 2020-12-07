@@ -11,20 +11,23 @@ import {
   showApplePayRequest,
 } from '../handlers/wyre';
 import {
-  addCashGetOrderStatus,
-  addCashOrderCreationFailure,
-  addCashResetCurrentOrder,
+  getOrderStatusThunkCreator,
+  ActionCreatorsList as AddCashActionCreatorsList,
 } from '~/redux/reducers/addCash';
 import useAccountSettings from './useAccountSettings';
 import usePurchaseTransactionStatus from './usePurchaseTransactionStatus';
 import useTimeout from './useTimeout';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
+const {
+  setOrderCreationFailuteActionCreator,
+  resetCurrentOrderActionCreator,
+} = AddCashActionCreatorsList;
 export default function useWyreApplePay() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(addCashResetCurrentOrder());
+    dispatch(resetCurrentOrderActionCreator());
   }, [dispatch]);
 
   const { accountAddress, network } = useAccountSettings();
@@ -37,7 +40,7 @@ export default function useWyreApplePay() {
   const [startPaymentCompleteTimeout] = useTimeout();
 
   const resetAddCashForm = useCallback(() => {
-    dispatch(addCashResetCurrentOrder());
+    dispatch(resetCurrentOrderActionCreator());
     setPaymentComplete(false);
   }, [dispatch]);
 
@@ -126,7 +129,7 @@ export default function useWyreApplePay() {
           applePayResponse.complete(PaymentRequestStatusTypes.SUCCESS);
           handlePaymentCallback();
           dispatch(
-            addCashGetOrderStatus(
+            getOrderStatusThunkCreator(
               referenceInfo,
               currency,
               orderId,
@@ -136,7 +139,7 @@ export default function useWyreApplePay() {
           );
         } else {
           dispatch(
-            addCashOrderCreationFailure({
+            setOrderCreationFailuteActionCreator({
               errorCategory,
               errorCode,
               errorMessage,

@@ -9,7 +9,7 @@ import {
   isZero,
   updatePrecisionToDisplay,
 } from '../helpers/utilities';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useSwapInputs({
   defaultInputAsset,

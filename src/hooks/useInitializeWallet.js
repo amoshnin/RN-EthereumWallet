@@ -17,7 +17,7 @@ import useInitializeAccountData from './useInitializeAccountData';
 import useLoadAccountData from './useLoadAccountData';
 import useLoadGlobalData from './useLoadGlobalData';
 import useResetAccountState from './useResetAccountState';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useInitializeWallet() {
   const dispatch = useDispatch();

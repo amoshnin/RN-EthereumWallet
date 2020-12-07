@@ -1,5 +1,5 @@
 import axios from 'axios';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const api = axios.create({
   baseURL: 'https://dapple.rainbow.me/get_top_movers',

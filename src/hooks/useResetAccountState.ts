@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { addCashClearState } from '~/redux/reducers/addCash';
+import { ActionCreatorsList as AddCashActionCreatorsList } from '~/redux/reducers/addCash';
 import { dataResetState } from '~/redux/reducers/data';
 import { explorerClearState } from '~/redux/reducers/explorer';
 import { nonceClearState } from '~/redux/reducers/nonce';
@@ -11,6 +11,7 @@ import { uniswapResetState } from '~/redux/reducers/uniswap';
 import { uniswapLiquidityResetState } from '~/redux/reducers/uniswapLiquidity';
 import { promiseUtils } from '../utils';
 
+const { clearStateActionCreator } = AddCashActionCreatorsList;
 export default function useResetAccountState() {
   const dispatch = useDispatch();
 
@@ -23,7 +24,7 @@ export default function useResetAccountState() {
     const p5 = dispatch(requestsResetState());
     const p6 = dispatch(uniswapResetState());
     const p7 = dispatch(uniswapLiquidityResetState());
-    const p8 = dispatch(addCashClearState());
+    const p8 = dispatch(clearStateActionCreator());
     await promiseUtils.PromiseAllWithFails([
       p0,
       p1,

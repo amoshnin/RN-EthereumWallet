@@ -3,7 +3,7 @@ import lang from 'i18n-js';
 import { get } from 'lodash';
 import { Alert } from '../components/alerts';
 import { getLocal, saveLocal } from '../handlers/localstorage/common';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export const getFCMToken = async () => {
   const fcmTokenLocal = await getLocal('rainbowFcmToken');

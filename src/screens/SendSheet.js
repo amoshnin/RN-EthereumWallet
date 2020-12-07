@@ -48,7 +48,7 @@ import {
 import Routes from '@rainbow-me/routes';
 import { borders, colors } from '@rainbow-me/styles';
 import { deviceUtils, gasUtils } from '@rainbow-me/utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const sheetHeight = deviceUtils.dimensions.height - (android ? 30 : 10);
 const statusBarHeight = getStatusBarHeight(true);

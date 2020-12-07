@@ -16,7 +16,7 @@ import { walletsUpdate } from '~/redux/reducers/wallets';
 import { ListFooter, ListItem } from '../list';
 import { RadioListItem } from '../radio-list';
 import Routes from '@rainbow-me/routes';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const DevSection = () => {
   const { navigate } = useNavigation();

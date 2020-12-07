@@ -70,7 +70,6 @@ const traverseData = (prev, data) => {
 
 function useJumpingForm(isLong) {
   const { setOptions } = useNavigation();
-
   const { jumpToShort, jumpToLong } = useContext(ModalContext) || {};
 
   useEffect(() => {

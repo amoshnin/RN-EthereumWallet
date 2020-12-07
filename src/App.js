@@ -56,7 +56,7 @@ import { requestsForTopic } from '~/redux/reducers/requests';
 import store from '~/redux/store';
 import { walletConnectLoadState } from '~/redux/reducers/walletconnect';
 import Routes from '@rainbow-me/routes';
-import logger from 'logger';
+import logger from '~/utils/logger';
 import { Portal } from 'react-native-cool-modals/Portal';
 
 const WALLETCONNECT_SYNC_DELAY = 500;

@@ -15,7 +15,7 @@ import {
 import NetworkTypes from '../helpers/networkTypes';
 import { subtract } from '../helpers/utilities';
 import { WYRE_SUPPORTED_COUNTRIES_ISO } from '../references/wyre';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const SOURCE_CURRENCY_USD = 'USD';
 const PAYMENT_PROCESSOR_COUNTRY_CODE = 'US';
@@ -30,7 +30,7 @@ const getBaseUrl = network =>
 
 const wyreApi = axios.create({
   headers: {
-    'Accept': 'application/json',
+    Accept: 'application/json',
     'Content-Type': 'application/json',
   },
   timeout: 30000, // 30 secs

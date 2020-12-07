@@ -14,7 +14,7 @@ import { imageMetadataCacheLoadState } from '@rainbow-me/redux/reducers/imageMet
 import { keyboardHeightsLoadState } from '@rainbow-me/redux/reducers/keyboardHeight';
 import { settingsLoadState } from '@rainbow-me/redux/reducers/settings';
 import { promiseUtils } from '@rainbow-me/utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const loadTopMoversToCache = () =>
   queryCache.prefetchQuery(TOP_MOVERS_FROM_STORAGE, getTopMovers);

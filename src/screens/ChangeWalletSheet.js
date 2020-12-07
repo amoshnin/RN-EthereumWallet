@@ -47,7 +47,7 @@ import {
   showActionSheetWithOptions,
 } from '@rainbow-me/utils';
 
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const deviceHeight = deviceUtils.dimensions.height;
 const footerHeight = 111;

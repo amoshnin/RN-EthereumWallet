@@ -13,7 +13,7 @@ import {
 import { erc20ABI } from '../references';
 import { UNISWAP_V1_EXCHANGE_ABI } from '../references/uniswap';
 import { web3Provider } from './web3';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 interface LiquidityToken {
   address: string;

@@ -28,7 +28,7 @@ import {
   WalletLibraryType,
 } from '../model/wallet';
 import { chains } from '../references';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const { RNBip39 } = NativeModules;
 const getEthPriceUnit = assets => {
@@ -175,6 +175,7 @@ export const daysFromTheFirstTx = address => {
     try {
       if (address === 'eth') {
         resolve(1000);
+        s;
         return;
       }
       const txTime = await fetchTxWithAlwaysCache(address);

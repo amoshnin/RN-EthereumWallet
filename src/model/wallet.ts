@@ -50,7 +50,7 @@ import {
 } from '../utils/keychainConstants';
 import * as keychain from './keychain';
 import { colors } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 const encryptor = new AesEncryptor();
 
 type EthereumAddress = string;

@@ -9,7 +9,7 @@ import { Navigation } from '@rainbow-me/navigation';
 import store from '@rainbow-me/redux/store';
 import { checkKeychainIntegrity } from '@rainbow-me/redux/reducers/wallets';
 import Routes from '@rainbow-me/routes';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const BACKUP_SHEET_DELAY_MS = 3000;
 

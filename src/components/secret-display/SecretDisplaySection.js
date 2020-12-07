@@ -18,7 +18,7 @@ import SecretDisplayCard from './SecretDisplayCard';
 import WalletTypes from '@rainbow-me/helpers/walletTypes';
 import { useWallets } from '@rainbow-me/hooks';
 import { colors, margin, padding, position, shadow } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const AuthenticationText = styled(Text).attrs({
   align: 'center',

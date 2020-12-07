@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 // eslint-disable-next-line import/default
 import CodePush from 'react-native-code-push';
 import VersionNumber from 'react-native-version-number';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 function formatAppVersion(appVersion = VersionNumber.appVersion, update) {
   let version = `${appVersion} (${VersionNumber.buildVersion})`;

@@ -1,5 +1,5 @@
 import { invert } from 'lodash';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, FC, Ref } from 'react';
 import { Dimensions } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import Animated, {
@@ -11,7 +11,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import styled from 'styled-components/native';
-import Spinner from '../../assets/chartSpinner.png';
+import Spinner from '~/assets/chartSpinner.png';
 import { nativeStackConfig } from '../../navigation/config';
 import { ChartExpandedStateHeader } from '../expanded-state/chart';
 import { Column } from '../layout';
@@ -103,7 +103,18 @@ function useShowLoadingState(isFetching) {
   return isShow;
 }
 
-export default function ChartWrapper({
+interface PropsType {
+  chartType: any;
+  color: any;
+  fetchingCharts: any;
+  updateChartType: any;
+  showChart: any;
+  showMonth: any;
+  showYear: any;
+  throttledData: any;
+}
+
+const ChartWrapper: FC<PropsType> = ({
   chartType,
   color,
   fetchingCharts,
@@ -113,7 +124,7 @@ export default function ChartWrapper({
   showYear,
   throttledData,
   ...props
-}) {
+}) => {
   const timespanIndex = useMemo(() => ChartTimespans.indexOf(chartType), [
     chartType,
   ]);
@@ -139,7 +150,7 @@ export default function ChartWrapper({
 
   const showLoadingState = useShowLoadingState(fetchingCharts);
 
-  const spinnerTimeout = useRef();
+  const spinnerTimeout = useRef() as any;
   useEffect(() => {
     if (showLoadingState) {
       clearTimeout(spinnerTimeout.current);
@@ -244,4 +255,6 @@ export default function ChartWrapper({
       ) : null}
     </Container>
   );
-}
+};
+
+export default ChartWrapper;

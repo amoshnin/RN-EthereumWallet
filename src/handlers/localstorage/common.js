@@ -1,6 +1,6 @@
 /*global storage*/
 import { toLower } from 'lodash';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const defaultVersion = '0.1.0';
 

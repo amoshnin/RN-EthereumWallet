@@ -16,7 +16,7 @@ import store from '~/redux/store';
 import { walletsSetSelected, walletsUpdate } from '~/redux/reducers/wallets';
 import { hasKey } from './keychain';
 import { colors } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default async function runMigrations() {
   // get current version

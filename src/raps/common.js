@@ -7,7 +7,7 @@ import depositCompound from './actions/depositCompound';
 import swap from './actions/swap';
 import unlock from './actions/unlock';
 import withdrawCompound from './actions/withdrawCompound';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const NOOP = () => undefined;
 

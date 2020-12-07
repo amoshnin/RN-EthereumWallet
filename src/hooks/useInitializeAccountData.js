@@ -8,7 +8,7 @@ import {
   uniswapGetAllExchanges,
   uniswapPairsInit,
 } from '~/redux/reducers/uniswap';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useInitializeAccountData() {
   const dispatch = useDispatch();

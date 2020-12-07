@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native';
 import BackgroundTimer from 'react-native-background-timer';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 let NotificationManager = ios ? NativeModules.NotificationManager : null;
 

@@ -18,6 +18,7 @@ export const DEFAULT_CHART_TYPE = ChartTypes.day;
 // -- Actions ---------------------------------------- //
 export const chartsLoadState = () => async (dispatch, getState) => {
   const { accountAddress, network } = getState().settings;
+
   try {
     dispatch({ type: CHARTS_LOAD_REQUEST });
     const charts = await getAccountCharts(accountAddress, network);
@@ -40,6 +41,7 @@ export const chartsUpdateChartType = chartType => dispatch =>
   });
 
 export const assetChartsReceived = message => (dispatch, getState) => {
+  console.log(message);
   const chartType = get(message, 'meta.charts_type');
   const { accountAddress, network } = getState().settings;
   const { charts: existingCharts } = getState().charts;

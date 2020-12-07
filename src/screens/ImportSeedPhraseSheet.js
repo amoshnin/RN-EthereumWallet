@@ -49,7 +49,7 @@ import { sheetVerticalOffset } from '@rainbow-me/navigation/effects';
 import Routes from '@rainbow-me/routes';
 import { borders, colors, padding } from '@rainbow-me/styles';
 import { deviceUtils, ethereumUtils } from '@rainbow-me/utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const sheetBottomPadding = 19;
 

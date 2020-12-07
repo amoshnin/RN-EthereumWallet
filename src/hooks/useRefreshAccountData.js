@@ -9,7 +9,7 @@ import { uniswapUpdateLiquidityState } from '~/redux/reducers/uniswapLiquidity';
 import { fetchWalletNames } from '~/redux/reducers/wallets';
 import useAccountSettings from './useAccountSettings';
 import useSavingsAccount from './useSavingsAccount';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useRefreshAccountData() {
   const dispatch = useDispatch();

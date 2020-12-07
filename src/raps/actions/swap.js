@@ -18,7 +18,7 @@ import {
   TRANSFER_EVENT_TOPIC_LENGTH,
 } from '../../references';
 import { ethereumUtils, gasUtils } from '../../utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const NOOP = () => undefined;
 

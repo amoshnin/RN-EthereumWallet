@@ -2,7 +2,7 @@ import { rapsAddOrUpdate } from '~/redux/reducers/raps';
 import store from '~/redux/store';
 import { ethUnits } from '../references';
 import { createNewAction, createNewRap, RapActionTypes } from './common';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export const estimateWithdrawFromCompound = () => ethUnits.basic_withdrawal;
 

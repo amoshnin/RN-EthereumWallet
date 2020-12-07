@@ -12,7 +12,7 @@ import useWalletConnectConnections from './useWalletConnectConnections';
 import useWallets from './useWallets';
 import Routes from '@rainbow-me/routes';
 import { addressUtils, haptics } from '@rainbow-me/utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 function useScannerState(enabled) {
   const [isCameraAuthorized, setIsCameraAuthorized] = useState(true);

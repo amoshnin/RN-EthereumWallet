@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 // eslint-disable-next-line import/default
 import ReactNative from 'react-native';
 import Storage from 'react-native-storage';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const storage = new Storage({
   defaultExpires: null,

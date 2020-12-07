@@ -82,7 +82,7 @@ import {
 } from '../utils/signingMethods';
 import { useNavigation } from '@rainbow-me/navigation';
 import { colors, padding } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const isReanimatedAvailable = !(
   !TurboModuleRegistry.get('NativeReanimated') &&

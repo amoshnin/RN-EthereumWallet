@@ -33,7 +33,7 @@ import {
 } from '../references/uniswap';
 
 import { toHex, web3Provider } from './web3';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 enum Field {
   INPUT = 'INPUT',

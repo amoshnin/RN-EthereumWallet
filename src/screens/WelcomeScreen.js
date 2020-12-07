@@ -31,7 +31,7 @@ import { cloudPlatform } from '../utils/platform';
 import { useHideSplashScreen } from '@rainbow-me/hooks';
 import Routes from '@rainbow-me/routes';
 import { colors, shadow } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const {
   and,

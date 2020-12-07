@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { setWalletBackedUp } from '~/redux/reducers/wallets';
 import WalletBackupTypes from '@rainbow-me/helpers/walletBackupTypes';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useWalletManualBackup() {
   const dispatch = useDispatch();

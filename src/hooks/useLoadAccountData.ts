@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import networkTypes from '../helpers/networkTypes';
-import { addCashLoadState } from '~/redux/reducers/addCash';
+import { loadStateThunkCreator } from '~/redux/reducers/addCash';
 import { dataLoadState } from '~/redux/reducers/data';
 import { coinListLoadState } from '~/redux/reducers/editOptions';
 import { openStateSettingsLoadState } from '~/redux/reducers/openStateSettings';
@@ -12,7 +12,7 @@ import { uniswapLoadState } from '~/redux/reducers/uniswap';
 import { uniswapLiquidityLoadState } from '~/redux/reducers/uniswapLiquidity';
 import { walletConnectLoadState } from '~/redux/reducers/walletconnect';
 import { promiseUtils } from '../utils';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function useLoadAccountData() {
   const dispatch = useDispatch();
@@ -32,7 +32,7 @@ export default function useLoadAccountData() {
       const p3 = dispatch(requestsLoadState());
       const p4 = dispatch(walletConnectLoadState());
       const p5 = dispatch(uniswapLoadState());
-      const p6 = dispatch(addCashLoadState());
+      const p6 = dispatch(loadStateThunkCreator());
       const p7 = dispatch(uniswapLiquidityLoadState());
       promises.push(p3, p4, p5, p6, p7);
 

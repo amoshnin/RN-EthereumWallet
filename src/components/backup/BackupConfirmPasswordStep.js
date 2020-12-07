@@ -23,7 +23,7 @@ import {
 import { useNavigation } from '@rainbow-me/navigation';
 import Routes from '@rainbow-me/routes';
 import { colors, margin, padding } from '@rainbow-me/styles';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 const DescriptionText = styled(Text).attrs({
   align: 'center',

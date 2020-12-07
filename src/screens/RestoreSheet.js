@@ -17,7 +17,7 @@ import WalletBackupTypes from '@rainbow-me/helpers/walletBackupTypes';
 import { useDimensions } from '@rainbow-me/hooks';
 import { useNavigation } from '@rainbow-me/navigation';
 import Routes from '@rainbow-me/routes';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export default function RestoreSheet() {
   const { goBack, navigate, setParams } = useNavigation();

@@ -11,7 +11,7 @@ import { getDepositGasLimit } from './actions/depositCompound';
 import { isValidSwapInput } from './actions/swap';
 import { assetNeedsUnlocking } from './actions/unlock';
 import { createNewAction, createNewRap, RapActionTypes } from './common';
-import logger from 'logger';
+import logger from '~/utils/logger';
 
 export const estimateSwapAndDepositCompound = async ({
   inputAmount,
