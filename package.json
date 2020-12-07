@@ -31,17 +31,6 @@
     "update-env": "curl -H 'Authorization: token '$GITHUB_TOKEN -H 'Accept: application/vnd.github.v3.raw' -O  -L https://api.github.com/repos/rainbow-me/rainbow-env/contents/dotenv && rm -f .env && mv dotenv .env",
     "ganache": "source .env && ganache-cli --f https://mainnet.infura.io/v3/${INFURA_PROJECT_ID_DEV} -p 7545 -i 1 -b 10"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts}": [
-      "eslint --ext '.js,.jsx,.ts' -c .eslintrc.json",
-      "stylelint"
-    ]
-  },
   "dependencies": {
     "@apollo/client": "^3.0.0-beta.34",
     "@bankify/react-native-animate-number": "^0.2.1",
