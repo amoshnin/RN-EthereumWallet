@@ -4,7 +4,7 @@ import FastImage from 'react-native-fast-image';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import { deleteAllBackups } from '../../../handlers/cloudBackup';
-import { walletsUpdate } from '../../../redux/wallets';
+import { walletsUpdate } from '~/redux/reducers/wallets';
 import Divider from '../../Divider';
 import { ButtonPressAnimation } from '../../animations';
 import { BottomRowText } from '../../coin-row';

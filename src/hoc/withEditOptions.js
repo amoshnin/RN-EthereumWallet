@@ -5,7 +5,7 @@ import {
   setHiddenCoins,
   setIsCoinListEdited,
   setPinnedCoins,
-} from '../redux/editOptions';
+} from '~/redux/reducers/editOptions';
 
 export default Component =>
   connect(() => ({}), {

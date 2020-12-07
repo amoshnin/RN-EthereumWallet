@@ -1,14 +1,14 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { addCashClearState } from '../redux/addCash';
-import { dataResetState } from '../redux/data';
-import { explorerClearState } from '../redux/explorer';
-import { nonceClearState } from '../redux/nonce';
-import { resetOpenStateSettings } from '../redux/openStateSettings';
-import { requestsResetState } from '../redux/requests';
-import { uniqueTokensResetState } from '../redux/uniqueTokens';
-import { uniswapResetState } from '../redux/uniswap';
-import { uniswapLiquidityResetState } from '../redux/uniswapLiquidity';
+import { addCashClearState } from '~/redux/reducers/addCash';
+import { dataResetState } from '~/redux/reducers/data';
+import { explorerClearState } from '~/redux/reducers/explorer';
+import { nonceClearState } from '~/redux/reducers/nonce';
+import { resetOpenStateSettings } from '~/redux/reducers/openStateSettings';
+import { requestsResetState } from '~/redux/reducers/requests';
+import { uniqueTokensResetState } from '~/redux/reducers/uniqueTokens';
+import { uniswapResetState } from '~/redux/reducers/uniswap';
+import { uniswapLiquidityResetState } from '~/redux/reducers/uniswapLiquidity';
 import { promiseUtils } from '../utils';
 
 export default function useResetAccountState() {

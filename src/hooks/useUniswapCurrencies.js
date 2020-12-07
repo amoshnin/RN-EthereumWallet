@@ -11,7 +11,7 @@ import { useNavigation } from '../navigation/Navigation';
 import {
   multicallAddListeners,
   multicallUpdateOutdatedListeners,
-} from '../redux/multicall';
+} from '~/redux/reducers/multicall';
 import useAccountAssets from './useAccountAssets';
 import useAccountSettings from './useAccountSettings';
 import { delayNext } from './useMagicAutofocus';

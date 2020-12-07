@@ -5,7 +5,7 @@ import { createSelector } from 'reselect';
 import {
   settingsUpdateAccountColor,
   settingsUpdateAccountName,
-} from '../redux/settings';
+} from '~/redux/reducers/settings';
 
 const mapStateToProps = ({
   settings: { accountAddress, accountColor, accountName },

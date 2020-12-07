@@ -5,7 +5,7 @@ import React, { useCallback, useRef } from 'react';
 import ImagePicker from 'react-native-image-crop-picker';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components/primitives';
-import { walletsSetSelected, walletsUpdate } from '../../redux/wallets';
+import { walletsSetSelected, walletsUpdate } from '~/redux/reducers/wallets';
 import Divider from '../Divider';
 import { ButtonPressAnimation } from '../animations';
 import { RainbowButton } from '../buttons';

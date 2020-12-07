@@ -9,7 +9,7 @@ import {
   backupWalletToCloud,
   fetchBackupPassword,
 } from '../model/backup';
-import { setWalletBackedUp } from '../redux/wallets';
+import { setWalletBackedUp } from '~/redux/reducers/wallets';
 import { cloudPlatform } from '../utils/platform';
 import useWallets from './useWallets';
 import {

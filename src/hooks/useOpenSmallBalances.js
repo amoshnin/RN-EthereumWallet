@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setOpenSmallBalances } from '../redux/openStateSettings';
+import { setOpenSmallBalances } from '~/redux/reducers/openStateSettings';
 
 export default function useOpenSmallBalances() {
   const dispatch = useDispatch();

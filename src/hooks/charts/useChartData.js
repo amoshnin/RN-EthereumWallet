@@ -4,8 +4,11 @@ import isEqual from 'react-fast-compare';
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { useCallbackOne } from 'use-memo-one';
-import { chartsUpdateChartType, DEFAULT_CHART_TYPE } from '../../redux/charts';
-import { emitChartsRequest } from '../../redux/explorer';
+import {
+  chartsUpdateChartType,
+  DEFAULT_CHART_TYPE,
+} from '~/redux/reducers/charts';
+import { emitChartsRequest } from '~/redux/reducers/explorer';
 import { daysFromTheFirstTx } from '../../utils/ethereumUtils';
 import useAsset from '../useAsset';
 

@@ -1,16 +1,16 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import networkTypes from '../helpers/networkTypes';
-import { addCashLoadState } from '../redux/addCash';
-import { dataLoadState } from '../redux/data';
-import { coinListLoadState } from '../redux/editOptions';
-import { openStateSettingsLoadState } from '../redux/openStateSettings';
-import { requestsLoadState } from '../redux/requests';
-import { showcaseTokensLoadState } from '../redux/showcaseTokens';
-import { uniqueTokensLoadState } from '../redux/uniqueTokens';
-import { uniswapLoadState } from '../redux/uniswap';
-import { uniswapLiquidityLoadState } from '../redux/uniswapLiquidity';
-import { walletConnectLoadState } from '../redux/walletconnect';
+import { addCashLoadState } from '~/redux/reducers/addCash';
+import { dataLoadState } from '~/redux/reducers/data';
+import { coinListLoadState } from '~/redux/reducers/editOptions';
+import { openStateSettingsLoadState } from '~/redux/reducers/openStateSettings';
+import { requestsLoadState } from '~/redux/reducers/requests';
+import { showcaseTokensLoadState } from '~/redux/reducers/showcaseTokens';
+import { uniqueTokensLoadState } from '~/redux/reducers/uniqueTokens';
+import { uniswapLoadState } from '~/redux/reducers/uniswap';
+import { uniswapLiquidityLoadState } from '~/redux/reducers/uniswapLiquidity';
+import { walletConnectLoadState } from '~/redux/reducers/walletconnect';
 import { promiseUtils } from '../utils';
 import logger from 'logger';
 

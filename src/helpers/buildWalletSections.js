@@ -15,9 +15,9 @@ import {
   setHiddenCoins,
   setIsCoinListEdited,
   setPinnedCoins,
-} from '../redux/editOptions';
-import { setOpenSmallBalances } from '../redux/openStateSettings';
-import store from '../redux/store';
+} from '~/redux/reducers/editOptions';
+import { setOpenSmallBalances } from '~/redux/reducers/openStateSettings';
+import store from '~/redux/store';
 import {
   amountOfShowedCoins,
   buildCoinsList,

@@ -7,7 +7,7 @@ import {
   gasUpdateDefaultGasLimit,
   gasUpdateGasPriceOption,
   gasUpdateTxFee,
-} from '../redux/gas';
+} from '~/redux/reducers/gas';
 
 export default function useGas() {
   const dispatch = useDispatch();

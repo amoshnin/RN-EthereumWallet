@@ -10,7 +10,7 @@ import { HeaderHeightWithStatusBar } from '../components/header';
 import { Column, Row } from '../components/layout';
 import { useWallets } from '../hooks';
 import { useNavigation } from '../navigation/Navigation';
-import { walletsSetSelected, walletsUpdate } from '../redux/wallets';
+import { walletsSetSelected, walletsUpdate } from '~/redux/reducers/wallets';
 import { deviceUtils } from '../utils';
 import { colors } from '@rainbow-me/styles';
 

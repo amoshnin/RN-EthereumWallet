@@ -15,7 +15,7 @@ import { Emoji, Text } from '../text';
 import CoinName from './CoinName';
 import CoinRow from './CoinRow';
 import { useNavigation } from '@rainbow-me/navigation';
-import { removeRequest } from '@rainbow-me/redux/requests';
+import { removeRequest } from '@rainbow-me/redux/reducers/requests';
 import Routes from '@rainbow-me/routes';
 import { colors } from '@rainbow-me/styles';
 

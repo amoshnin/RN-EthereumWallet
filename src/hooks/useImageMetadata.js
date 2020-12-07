@@ -1,7 +1,7 @@
 import { map } from 'lodash';
 import { useCallback, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateImageMetadataCache } from '../redux/imageMetadata';
+import { updateImageMetadataCache } from '~/redux/reducers/imageMetadata';
 import { getDominantColorFromImage } from '../utils';
 import useDimensions from './useDimensions';
 import { position } from '@rainbow-me/styles';

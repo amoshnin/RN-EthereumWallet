@@ -37,8 +37,8 @@ import {
 import showWalletErrorAlert from '../helpers/support';
 import WalletLoadingStates from '../helpers/walletLoadingStates';
 import { EthereumWalletType } from '../helpers/walletTypes';
-import store from '../redux/store';
-import { setIsWalletLoading } from '../redux/wallets';
+import store from '~/redux/store';
+import { setIsWalletLoading } from '~/redux/reducers/wallets';
 import { ethereumUtils } from '../utils';
 import {
   addressKey,

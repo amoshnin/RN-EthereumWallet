@@ -16,7 +16,7 @@ import {
   walletsLoadState,
   walletsSetSelected,
   walletsUpdate,
-} from '../redux/wallets';
+} from '~/redux/reducers/wallets';
 import { ethereumUtils } from '../utils';
 import {
   allWalletsKey,

@@ -1,8 +1,8 @@
 import analytics from '@segment/analytics-react-native';
 import { captureException } from '@sentry/react-native';
 import { get, join, map } from 'lodash';
-import { rapsAddOrUpdate } from '../redux/raps';
-import store from '../redux/store';
+import { rapsAddOrUpdate } from '~/redux/reducers/raps';
+import store from '~/redux/store';
 import depositCompound from './actions/depositCompound';
 import swap from './actions/swap';
 import unlock from './actions/unlock';

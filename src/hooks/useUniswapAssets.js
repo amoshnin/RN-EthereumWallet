@@ -12,7 +12,7 @@ import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { greaterThanOrEqualTo, multiply } from '../helpers/utilities';
-import { uniswapUpdateFavorites } from '../redux/uniswap';
+import { uniswapUpdateFavorites } from '~/redux/reducers/uniswap';
 
 const uniswapLoadingAllTokensSelector = state => state.uniswap.loadingAllTokens;
 const uniswapFavoritesSelector = state => state.uniswap.favorites;

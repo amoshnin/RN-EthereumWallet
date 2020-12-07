@@ -6,7 +6,7 @@ import {
   settingsChangeLanguage,
   settingsChangeNativeCurrency,
   settingsUpdateNetwork,
-} from '../redux/settings';
+} from '~/redux/reducers/settings';
 import supportedNativeCurrencies from '../references/native-currencies.json';
 
 const mapStateToProps = ({

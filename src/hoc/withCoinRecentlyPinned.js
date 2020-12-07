@@ -1,5 +1,8 @@
 import { connect } from 'react-redux';
-import { pushSelectedCoin, removeSelectedCoin } from '../redux/editOptions';
+import {
+  pushSelectedCoin,
+  removeSelectedCoin,
+} from '~/redux/reducers/editOptions';
 
 const mapStateToProps = ({ editOptions: { recentlyPinnedCount } }) => ({
   recentlyPinnedCount,

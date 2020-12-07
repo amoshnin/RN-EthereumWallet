@@ -9,7 +9,7 @@ import {
   includes,
   sortBy,
 } from 'lodash';
-import store from '../redux/store';
+import store from '~/redux/store';
 import supportedNativeCurrencies from '../references/native-currencies.json';
 import { add, convertAmountToNativeDisplay } from './utilities';
 import { ETH_ICON_URL } from '@rainbow-me/utils';

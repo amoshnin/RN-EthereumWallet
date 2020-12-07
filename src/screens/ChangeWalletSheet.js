@@ -32,7 +32,7 @@ import {
   walletsLoadState,
   walletsSetSelected,
   walletsUpdate,
-} from '../redux/wallets';
+} from '~/redux/reducers/wallets';
 import WalletBackupTypes from '@rainbow-me/helpers/walletBackupTypes';
 import {
   useAccountSettings,

@@ -29,7 +29,7 @@ import {
   useWallets,
   useWalletSectionsData,
 } from '../hooks';
-import { updateRefetchSavings } from '../redux/data';
+import { updateRefetchSavings } from '~/redux/reducers/data';
 import { position } from '@rainbow-me/styles';
 
 const HeaderOpacityToggler = styled(OpacityToggler).attrs(({ isVisible }) => ({

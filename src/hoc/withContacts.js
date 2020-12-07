@@ -2,7 +2,7 @@ import { sortBy, values } from 'lodash';
 import { connect } from 'react-redux';
 import { compose, withProps } from 'recompact';
 import { createSelector } from 'reselect';
-import { contactsAddOrUpdate, removeContact } from '../redux/contacts';
+import { contactsAddOrUpdate, removeContact } from '~/redux/reducers/contacts';
 
 const contactsSelector = state => state.contacts;
 

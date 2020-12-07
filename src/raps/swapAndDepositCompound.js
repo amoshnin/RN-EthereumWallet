@@ -1,8 +1,8 @@
 import { concat, reduce } from 'lodash';
 import { estimateSwapGasLimit } from '../handlers/uniswap';
 import { add } from '../helpers/utilities';
-import { rapsAddOrUpdate } from '../redux/raps';
-import store from '../redux/store';
+import { rapsAddOrUpdate } from '~/redux/reducers/raps';
+import store from '~/redux/store';
 import { ethUnits, savingsAssetsListByUnderlying } from '../references';
 import { UNISWAP_V2_ROUTER_ADDRESS } from '../references/uniswap';
 import { contractUtils } from '../utils';

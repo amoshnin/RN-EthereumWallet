@@ -10,7 +10,7 @@ import {
   useLoadAccountData,
   useResetAccountState,
 } from '../../hooks';
-import { settingsUpdateNetwork } from '../../redux/settings';
+import { settingsUpdateNetwork } from '~/redux/reducers/settings';
 import { RadioList, RadioListItem } from '../radio-list';
 
 const networks = values(networkInfo);

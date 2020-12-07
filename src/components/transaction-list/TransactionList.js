@@ -18,8 +18,8 @@ import {
 import { isENSAddressFormat } from '../../helpers/validators';
 import { useAccountProfile, useWallets } from '../../hooks';
 import { useNavigation } from '../../navigation/Navigation';
-import { removeRequest } from '../../redux/requests';
-import { walletsSetSelected, walletsUpdate } from '../../redux/wallets';
+import { removeRequest } from '~/redux/reducers/requests';
+import { walletsSetSelected, walletsUpdate } from '~/redux/reducers/wallets';
 import { FloatingEmojis } from '../floating-emojis';
 import Routes from '@rainbow-me/routes';
 import { colors } from '@rainbow-me/styles';

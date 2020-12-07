@@ -31,7 +31,7 @@ import isKeyboardOpen from '../helpers/isKeyboardOpen';
 import { loadWallet } from '../model/wallet';
 import { useNavigation } from '../navigation/Navigation';
 import { executeRap } from '../raps/common';
-import { multicallClearState } from '../redux/multicall';
+import { multicallClearState } from '~/redux/reducers/multicall';
 import ethUnits from '../references/ethereum-units.json';
 import {
   useAccountSettings,

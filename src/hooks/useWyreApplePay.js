@@ -14,7 +14,7 @@ import {
   addCashGetOrderStatus,
   addCashOrderCreationFailure,
   addCashResetCurrentOrder,
-} from '../redux/addCash';
+} from '~/redux/reducers/addCash';
 import useAccountSettings from './useAccountSettings';
 import usePurchaseTransactionStatus from './usePurchaseTransactionStatus';
 import useTimeout from './useTimeout';

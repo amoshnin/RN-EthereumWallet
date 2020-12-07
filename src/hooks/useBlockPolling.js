@@ -1,5 +1,8 @@
 import { useCallback } from 'react';
-import { web3ListenerInit, web3ListenerStop } from '../redux/web3listener';
+import {
+  web3ListenerInit,
+  web3ListenerStop,
+} from '~/redux/reducers/web3listener';
 
 export default function useBlockPolling() {
   const initWeb3Listener = useCallback(() => web3ListenerInit(), []);

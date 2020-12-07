@@ -1,11 +1,11 @@
 import qs from 'qs';
 import URL from 'url-parse';
-import store from '../redux/store';
+import store from '~/redux/store';
 import {
   walletConnectOnSessionRequest,
   walletConnectRemovePendingRedirect,
   walletConnectSetPendingRedirect,
-} from '../redux/walletconnect';
+} from '~/redux/reducers/walletconnect';
 import logger from 'logger';
 
 export default function handleDeeplink(url) {

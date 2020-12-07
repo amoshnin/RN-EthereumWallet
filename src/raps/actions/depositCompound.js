@@ -6,9 +6,9 @@ import ProtocolTypes from '../../helpers/protocolTypes';
 import TransactionStatusTypes from '../../helpers/transactionStatusTypes';
 import TransactionTypes from '../../helpers/transactionTypes';
 import { convertAmountToRawAmount, isZero } from '../../helpers/utilities';
-import { dataAddNewTransaction } from '../../redux/data';
-import { rapsAddOrUpdate } from '../../redux/raps';
-import store from '../../redux/store';
+import { dataAddNewTransaction } from '~/redux/reducers/data';
+import { rapsAddOrUpdate } from '~/redux/reducers/raps';
+import store from '~/redux/store';
 import {
   compoundCERC20ABI,
   compoundCETHABI,

@@ -9,9 +9,9 @@ import {
   greaterThan,
   isZero,
 } from '../../helpers/utilities';
-import { dataAddNewTransaction } from '../../redux/data';
-import { rapsAddOrUpdate } from '../../redux/raps';
-import store from '../../redux/store';
+import { dataAddNewTransaction } from '~/redux/reducers/data';
+import { rapsAddOrUpdate } from '~/redux/reducers/raps';
+import store from '~/redux/store';
 import { AllowancesCache, contractUtils, gasUtils } from '../../utils';
 import logger from 'logger';
 

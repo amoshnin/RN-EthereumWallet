@@ -7,7 +7,7 @@ import {
   setHiddenCoins as rawSetHiddenCoins,
   setIsCoinListEdited as rawSetIsCoinListEdited,
   setPinnedCoins as rawSetPinnedCoins,
-} from '../redux/editOptions';
+} from '~/redux/reducers/editOptions';
 
 export default function useCoinListEditOptions() {
   const dispatch = useDispatch();

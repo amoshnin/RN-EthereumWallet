@@ -6,7 +6,7 @@ import { sortList } from '../helpers/sortList';
 import {
   walletConnectDisconnectAllByDappName as rawWalletConnectDisconnectAllByDappName,
   walletConnectOnSessionRequest as rawWalletConnectOnSessionRequest,
-} from '../redux/walletconnect';
+} from '~/redux/reducers/walletconnect';
 
 const formatDappData = connections =>
   values(

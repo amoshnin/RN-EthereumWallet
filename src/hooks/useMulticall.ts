@@ -3,8 +3,8 @@ import { ChainId } from '@uniswap/sdk';
 import { map } from 'lodash';
 import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
-import { Call, toCallKey } from '../redux/multicall';
-import { AppState } from '../redux/store';
+import { Call, toCallKey } from '~/redux/reducers/multicall';
+import { AppState } from '~/redux/store';
 
 const INVALID_RESULT = {
   blockNumber: undefined,

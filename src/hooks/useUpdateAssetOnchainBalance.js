@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { getOnchainAssetBalance } from '../handlers/assets';
-import { dataUpdateAssets } from '../redux/data';
+import { dataUpdateAssets } from '~/redux/reducers/data';
 import useAccountAssets from './useAccountAssets';
 import { logger } from '@rainbow-me/utils';
 

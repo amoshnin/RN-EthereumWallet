@@ -6,7 +6,7 @@ import {
 import {
   settingsUpdateAccountColor,
   settingsUpdateAccountName,
-} from '../redux/settings';
+} from '~/redux/reducers/settings';
 
 export default function useAccountSettings() {
   const { language } = useSelector(createLanguageSelector);

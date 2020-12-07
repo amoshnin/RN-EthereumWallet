@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setOpenInvestmentCards } from '../redux/openStateSettings';
+import { setOpenInvestmentCards } from '~/redux/reducers/openStateSettings';
 
 export default function useOpenInvestmentCards() {
   const dispatch = useDispatch();

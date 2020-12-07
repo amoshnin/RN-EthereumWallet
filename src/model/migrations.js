@@ -11,9 +11,9 @@ import {
   saveAddress,
   seedPhraseKey,
 } from '../model/wallet';
-import store from '../redux/store';
+import store from '~/redux/store';
 
-import { walletsSetSelected, walletsUpdate } from '../redux/wallets';
+import { walletsSetSelected, walletsUpdate } from '~/redux/reducers/wallets';
 import { hasKey } from './keychain';
 import { colors } from '@rainbow-me/styles';
 import logger from 'logger';

@@ -5,12 +5,12 @@ import { Alert } from 'react-native';
 import { useDispatch } from 'react-redux';
 import runMigrations from '../model/migrations';
 import { walletInit } from '../model/wallet';
-import { appStateUpdate } from '../redux/appState';
+import { appStateUpdate } from '~/redux/reducers/appState';
 import {
   settingsLoadNetwork,
   settingsUpdateAccountAddress,
-} from '../redux/settings';
-import { walletsLoadState } from '../redux/wallets';
+} from '~/redux/reducers/settings';
+import { walletsLoadState } from '~/redux/reducers/wallets';
 import useAccountSettings from './useAccountSettings';
 import useHideSplashScreen from './useHideSplashScreen';
 import useInitializeAccountData from './useInitializeAccountData';

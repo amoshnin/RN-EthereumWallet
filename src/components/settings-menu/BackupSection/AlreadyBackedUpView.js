@@ -5,7 +5,7 @@ import { Alert, View } from 'react-native';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import { deleteAllBackups } from '../../../handlers/cloudBackup';
-import { walletsUpdate } from '../../../redux/wallets';
+import { walletsUpdate } from '~/redux/reducers/wallets';
 import { cloudPlatform } from '../../../utils/platform';
 import { DelayedAlert } from '../../alerts';
 import { ButtonPressAnimation } from '../../animations';

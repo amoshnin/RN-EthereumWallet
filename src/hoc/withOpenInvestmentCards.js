@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setOpenInvestmentCards } from '../redux/openStateSettings';
+import { setOpenInvestmentCards } from '~/redux/reducers/openStateSettings';
 
 const mapStateToProps = ({ openStateSettings: { openInvestmentCards } }) => ({
   openInvestmentCards,

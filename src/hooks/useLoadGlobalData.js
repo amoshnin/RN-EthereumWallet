@@ -9,10 +9,10 @@ import {
   getWalletBalances,
   WALLET_BALANCES_FROM_STORAGE,
 } from '@rainbow-me/handlers/localstorage/walletBalances';
-import { contactsLoadState } from '@rainbow-me/redux/contacts';
-import { imageMetadataCacheLoadState } from '@rainbow-me/redux/imageMetadata';
-import { keyboardHeightsLoadState } from '@rainbow-me/redux/keyboardHeight';
-import { settingsLoadState } from '@rainbow-me/redux/settings';
+import { contactsLoadState } from '@rainbow-me/redux/reducers/contacts';
+import { imageMetadataCacheLoadState } from '@rainbow-me/redux/reducers/imageMetadata';
+import { keyboardHeightsLoadState } from '@rainbow-me/redux/reducers/keyboardHeight';
+import { settingsLoadState } from '@rainbow-me/redux/reducers/settings';
 import { promiseUtils } from '@rainbow-me/utils';
 import logger from 'logger';
 

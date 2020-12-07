@@ -7,7 +7,7 @@ import WalletTypes from '@rainbow-me/helpers/walletTypes';
 import { Navigation } from '@rainbow-me/navigation';
 
 import store from '@rainbow-me/redux/store';
-import { checkKeychainIntegrity } from '@rainbow-me/redux/wallets';
+import { checkKeychainIntegrity } from '@rainbow-me/redux/reducers/wallets';
 import Routes from '@rainbow-me/routes';
 import logger from 'logger';
 

@@ -67,7 +67,7 @@ import {
   signTransaction,
   signTypedDataMessage,
 } from '../model/wallet';
-import { walletConnectRemovePendingRedirect } from '../redux/walletconnect';
+import { walletConnectRemovePendingRedirect } from '~/redux/reducers/walletconnect';
 import { ethereumUtils, safeAreaInsetValues } from '../utils';
 import { methodRegistryLookupAndParse } from '../utils/methodRegistry';
 import {

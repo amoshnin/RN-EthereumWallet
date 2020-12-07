@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setOpenSavings } from '../redux/openStateSettings';
+import { setOpenSavings } from '~/redux/reducers/openStateSettings';
 
 const mapStateToProps = ({ openStateSettings: { openSavings } }) => ({
   openSavings,

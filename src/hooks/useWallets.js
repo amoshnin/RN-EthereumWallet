@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { findLatestBackUp } from '../model/backup';
-import { setIsWalletLoading as rawSetIsWalletLoading } from '../redux/wallets';
+import { setIsWalletLoading as rawSetIsWalletLoading } from '~/redux/reducers/wallets';
 import WalletTypes from '@rainbow-me/helpers/walletTypes';
 
 const walletSelector = createSelector(

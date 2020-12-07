@@ -10,9 +10,9 @@ import {
   greaterThan,
   isZero,
 } from '../../helpers/utilities';
-import { dataAddNewTransaction } from '../../redux/data';
-import { rapsAddOrUpdate } from '../../redux/raps';
-import store from '../../redux/store';
+import { dataAddNewTransaction } from '~/redux/reducers/data';
+import { rapsAddOrUpdate } from '~/redux/reducers/raps';
+import store from '~/redux/store';
 import {
   TRANSFER_EVENT_KECCAK,
   TRANSFER_EVENT_TOPIC_LENGTH,

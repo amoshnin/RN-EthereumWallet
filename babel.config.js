@@ -27,6 +27,13 @@ module.exports = function(api) {
     'date-fns',
     'graphql-tag',
     ['lodash', { id: ['lodash', 'recompact'] }],
+    [
+      'babel-plugin-root-import',
+      {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'src',
+      },
+    ],
     'react-native-reanimated/plugin',
     [
       'module:react-native-dotenv',
